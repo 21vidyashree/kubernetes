@@ -81,8 +81,9 @@ Worker Node Setup:
 
 	    kubeadm join --discovery-token abcdef.1234567890abcdef --discovery-token-ca-cert-hash sha256:1234..cdef 1.2.3.4:6443
 
-	kubectl get nodes
-
+	token-kubectl get nodes
+sudo kubeadm join 172.31.6.162:6443 --token 3spqir.04oylfa167z31z3p \
+    --discovery-token-ca-cert-hash sha256:6a0fee8594a58a438e70fd8ddfc8ebb5ed0b74d18f7c46b8472fe7c122e1abca
 
 #############################################################################################################################################################
 
